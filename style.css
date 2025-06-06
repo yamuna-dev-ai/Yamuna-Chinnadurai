@@ -1,61 +1,78 @@
 
-:root {
-  --primary-color: #005fa3;
-  --secondary-color: #ffffff;
-  --bg-color: #f4f7fa;
-  --accent-color: #0078d4;
-  --text-color: #333;
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg-color);
+  font-family: Arial, sans-serif;
   margin: 0;
-  color: var(--text-color);
+  padding: 0;
+  background: #f4f7fa;
+  color: #333;
 }
 header {
-  background: linear-gradient(to right, #0078d4, #005fa3);
+  background: #005fa3;
   color: white;
+  padding: 2rem;
   text-align: center;
-  padding: 2rem 1rem;
 }
 .navbar {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  background: white;
-  box-shadow: var(--card-shadow);
-  padding: 0.5rem;
-  z-index: 1000;
 }
 .nav-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.nav-container a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-.nav-container a:hover {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
-}
 section {
-  background: white;
-  margin: 2rem auto;
-  padding: 2rem;
   max-width: 900px;
-  border-radius: 8px;
-  box-shadow: var(--card-shadow);
-}
-h2 {
-  color: var(--accent-color);
-  border-bottom: 2px solid #e0e0e0;
-}
-footer {
-  text-align: center;
-  background: #e8edf3;
+  margin: 2rem auto;
   padding: 1rem;
-  margin-top: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+.skills-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.skills-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 40px;
+  border-left: 3px solid #0078d4;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #0078d4;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
